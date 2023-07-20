@@ -1,0 +1,13 @@
+---
+- hosts: all
+  tasks:
+
+    - name: Debug
+      shell: "echo $LC_ALL"
+      register: test
+
+
+
+      name: Debug
+      shell: "env"
+      register: test2
